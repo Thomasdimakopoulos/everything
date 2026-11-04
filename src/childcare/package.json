@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Childcare center management: check-in, daily activity reports, family messaging, and tuition billing.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

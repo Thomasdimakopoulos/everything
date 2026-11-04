@@ -5,9 +5,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "npm run build:worker && vite build",
-    "build:worker": "vite build --config vite.worker.config.js",
+    "dev": "node init && vite",
+    "build": "node init && npm run build:worker && vite build",
+    "build:worker": "node init && vite build --config vite.worker.config.js",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -30,8 +30,6 @@ playwright-report/
 test-results/
 
 # Local environment files; keep shareable templates
-.env
-.env.*
 !.env.example
 !.env.*.example
 !.env.sample
@@ -57,3 +55,4 @@ Desktop.ini
 venv/
 __pycache__/
 *.pyc
+config.bat

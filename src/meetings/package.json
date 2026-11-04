@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Puter Meetings \u2014 realtime video meetings built entirely on Puter.js and the Puter Peer API.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "icons": "./scripts/generate-icons.sh",
     "test": "vitest run",
