@@ -2,6 +2,9 @@ import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
 import collabDevServer from './dev/collab-dev-server.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig({
   plugins: [puterLocalhost('documents'), collabDevServer()],
