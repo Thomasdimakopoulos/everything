@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 import { fileURLToPath } from 'node:url'
 import puterLocalhost from '../../dev/puter-localhost.mjs'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -19,4 +22,4 @@ export default defineConfig({
     environment: 'node',
     include: ['src/**/*.test.js'],
   },
-})
+});

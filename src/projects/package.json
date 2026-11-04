@@ -1,13 +1,13 @@
 {
   "name": "project-management",
   "version": "1.0.0",
-  "description": "Lightweight project management — kanban boards, timelines, milestones, comments, and attachments on Puter",
+  "description": "Lightweight project management \u2014 kanban boards, timelines, milestones, comments, and attachments on Puter",
   "type": "module",
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "icons": "bash scripts/build-icons.sh",
     "preview": "vite preview",
     "test": "vitest run",
