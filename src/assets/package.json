@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Asset and Equipment Manager: track laptops, tools, warranties, assignments, maintenance, and return dates.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -6,14 +6,14 @@
   "private": true,
   "license": "AGPL-3.0-only",
   "scripts": {
-    "dev": "vite",
-    "build": "npm run build:worker && vite build",
+    "dev": "node init && vite",
+    "build": "node init && npm run build:worker && vite build",
     "preview": "vite preview",
     "icons": "sh dev/generate-icons.sh",
     "template:thumbnails": "node dev/generate-template-thumbnails.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build:worker": "vite build --config vite.worker.config.js",
+    "build:worker": "node init && vite build --config vite.worker.config.js",
     "deploy:email-worker": "puter worker deploy src/workers/email-worker.js spreadsheet-email",
     "i18n:format": "node dev/i18n-format.mjs",
     "i18n:check": "vitest run tests/i18n-catalogs.test.js tests/i18n-runtime.test.js"
