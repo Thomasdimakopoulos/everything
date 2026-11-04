@@ -3,6 +3,10 @@ import { cpSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 let workerDevelopmentUrl;
 // On-device OCR (src/ocr-engine.js) loads tesseract.js's worker, its WebAssembly core and the
 // English model from ocr/ beside the app, never from a CDN. Only the LSTM cores are needed (the

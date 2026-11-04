@@ -2,6 +2,9 @@ import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { defineConfig } from 'vite';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 /**
  * Emit the service worker with its precache list and a version baked in.

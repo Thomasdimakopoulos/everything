@@ -6,8 +6,8 @@
   "type": "module",
   "description": "A clean, accessible presentation editor with real PPTX files and Puter cloud storage.",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "dev": "node init && vite --host 0.0.0.0",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",

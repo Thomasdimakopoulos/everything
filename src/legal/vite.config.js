@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig({
   plugins: [puterLocalhost('legal')],
