@@ -1,12 +1,12 @@
 {
   "name": "contract-manager",
   "version": "1.0.0",
-  "description": "Contract Manager — store agreements, track renewal dates, extract obligations, and connect documents to contacts. Built on Puter.",
+  "description": "Contract Manager \u2014 store agreements, track renewal dates, extract obligations, and connect documents to contacts. Built on Puter.",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Property management: properties, units, leases, tenants, rent collection, accounting, maintenance, and reports.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
