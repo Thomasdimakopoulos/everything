@@ -1,12 +1,12 @@
 {
   "name": "point-of-sale",
   "version": "1.0.0",
-  "description": "Point of Sale — catalog, checkout, receipts, discounts, taxes, and sales reports on Puter",
+  "description": "Point of Sale \u2014 catalog, checkout, receipts, discounts, taxes, and sales reports on Puter",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
