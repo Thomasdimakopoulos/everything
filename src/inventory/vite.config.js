@@ -4,6 +4,9 @@ import { publicContentPlugin } from './site/plugin.js';
 import { SITE_URL } from './site/content.js';
 import { escapeHTML } from './site/render.js';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig({
   appType: 'mpa',

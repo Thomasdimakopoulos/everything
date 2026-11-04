@@ -8,13 +8,13 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:rust": "cargo test --manifest-path wasm/kernel/Cargo.toml",
-    "build:wasm": "node tools/build-wasm.mjs",
+    "build:wasm": "node init && node tools/build-wasm.mjs",
     "check:licenses": "node tools/check-licenses.mjs",
     "prebuild": "npm run check:licenses"
   },

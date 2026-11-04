@@ -3,6 +3,9 @@ import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import puterLocalhost from "../../dev/puter-localhost.mjs";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // Features opened on demand (the Miro migration, the administration console,
 // the PowerPoint, SVG and PDF writers, and the PDF reader) load as their own
