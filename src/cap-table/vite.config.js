@@ -2,6 +2,9 @@ import { defineConfig } from 'vite';
 import { readFileSync } from 'node:fs';
 import { publicContentPlugin } from './site/plugin.js';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig({
   appType: 'mpa',

@@ -2,6 +2,9 @@ import { defineConfig } from "vite";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // Features opened on demand (the Miro migration, the administration console,
 // the PowerPoint and SVG writers, and the PDF reader) load as their own

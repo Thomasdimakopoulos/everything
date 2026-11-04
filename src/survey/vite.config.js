@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 import puterLocalhost from '../../dev/puter-localhost.mjs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // Two pages: the survey builder (index.html) and the page respondents open
 // from a shared link (r/index.html). The respondent page loads no SDK and none

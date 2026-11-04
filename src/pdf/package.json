@@ -6,8 +6,8 @@
   "type": "module",
   "description": "A private, framework-free PDF workspace powered by Puter.",
   "scripts": {
-    "dev": "vite",
-    "build": "npm run licenses && vite build",
+    "dev": "node init && vite",
+    "build": "node init && npm run licenses && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
