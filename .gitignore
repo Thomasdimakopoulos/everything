@@ -55,4 +55,6 @@ Desktop.ini
 venv/
 __pycache__/
 *.pyc
-config.bat
+
+.env
+.env.*
