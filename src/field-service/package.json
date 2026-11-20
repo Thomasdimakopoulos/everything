@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Field service management: clients, requests, quotes, jobs, scheduling, invoices, and payments.",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
