@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Play checkers against the computer or a friend \u2014 locally or online. No frameworks, just the web.",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

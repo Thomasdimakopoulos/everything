@@ -6,8 +6,8 @@
   "license": "AGPL-3.0-only",
   "description": "Building Design: building information modeling in the browser. Model walls, doors, windows, floors, roofs, stairs and rooms on levels, then work in plans, elevations, sections, 3D, schedules and sheets.",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
