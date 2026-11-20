@@ -6,8 +6,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "icons": "bash scripts/build-icons.sh",
     "preview": "vite preview",
     "test": "vitest run",

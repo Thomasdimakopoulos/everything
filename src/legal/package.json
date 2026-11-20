@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Legal practice management: matters, contacts, time and expense tracking, billing, trust accounting, calendar, tasks, and documents.",
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
